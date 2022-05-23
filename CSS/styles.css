@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+body{
+       font-family: Verdana, Georgia, 'Times New Roman', Tahoma, 'sans-serif';
+        width: 100%;
+        margin: 0;
+        position: absolute;
+ }
+.header-container{
+    background-color: ghostwhite;
+    box-shadow: 0 0 0.5rem rgb(173, 188, 215);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0,5rem 1rem;
+    font-size: 1vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    z-index: 1;
+ }
+
+.header-menubar ul{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+.header-menubar ul li {
+    display: inline-block;
+    text-align: center;
+    float: left;
+    width: 6.5rem;
+    font-size: 1vw;
+}
+.header-menubar ul li a {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    text-decoration: none
+    color:inherit
+ }
+ .header-menubar ul li a:hover {
+     -moz-background-inline-policy: continuous;
+ }
+
+main{
+    background-color: ghostwhite;
+    box-shadow: 0 0 0.5rem rgb(173, 188, 215);
+    margin-top: 5rem; 
+}
+.descripcion-pcipal{
+    width: auto;
+    padding: 5rem;
+    position: relative;
+    border-top: 2,5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.grid-tratamientos{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px
+    padding: 5rem;
+    box-shadow: 0 0 0.5rem rgb(173, 188, 215);
+    position: relative;
+    top: 2.5rem;
+}
+.articulos {
+    border: 10px;
+    padding: 20px;
+    font-size: 0,1 vw;
+    display: flex;
+    text-align: center;
+    position: relative;
+    width:fit-content
+    line-height: 1.4vw;
+    background: border-box
+ 
+}
+.articulos h3 {
+    font-size: 1rem;
+    justify-content: center;
+}
+.articulos p {
+    font-size: 0.75rem;
+    justify-content: center
+}
+.img-trat{
+     display: block;
+     background-size: contain;
+     padding:0.15rem;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: rgb(165, 165, 182);
+    height: 50vh;
+    text-align: center;
+    font-weight: 100;
+    box-shadow: 0 0 0.5rem rgb(173, 188, 215);
+    padding: 2rem;
+    justify-content:space-around
+ }
+.footer-right ul li {
+  display: inline-block;  
+  list-style: none
+  padding: 10%;   
+  }
+.footer-left {
+    display: flex;  
+    list-style: none
+    padding: 10%;   
+    }
+.icono {
+   background-size: contain;
+   width: 30%;
+}
+
+@media (max-width: 600px) {
+    .footer .footer-left, .footer .footer-right {
+      text-align: center;
+    }
+    .footer .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer .footer-right p {
+      line-height: 1.8;
+    }
