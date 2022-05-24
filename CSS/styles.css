@@ -3,10 +3,11 @@
     padding: 0;
   }
 body{
-       font-family: Verdana, Georgia, 'Times New Roman', Tahoma, 'sans-serif';
+        font-family: Verdana, Georgia, 'Times New Roman', Tahoma, 'sans-serif';
         width: 100%;
         margin: 0;
         position: absolute;
+        background-color: ghostwhite;
  }
 .header-container{
     background-color: ghostwhite;
@@ -16,40 +17,47 @@ body{
     align-items: center;
     padding: 0,5rem 1rem;
     font-size: 1vw;
+    font-weight: 600;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%; 
     z-index: 1;
  }
-
 .header-menubar ul{
     margin: 0%;
     padding: 0%;
+    float: right;
     list-style: none;
 }
 .header-menubar ul li {
-    display: inline-block;
     text-align: center;
     float: left;
     width: 6.5rem;
-    font-size: 1vw;
+    font-size: 1rem;
+    color: #364f6b;
 }
 .header-menubar ul li a {
     display: block;
     padding: 1rem 2rem;
-    font-size: 1.3rem;
-    text-decoration: none
-    color:inherit
+    font-size: 1rem;
+    text-decoration: none;
  }
  .header-menubar ul li a:hover {
-     -moz-background-inline-policy: continuous;
+    color: #2fbbb2;
+	text-decoration: none;
  }
 
 main{
-    background-color: ghostwhite;
-    box-shadow: 0 0 0.5rem rgb(173, 188, 215);
     margin-top: 5rem; 
+    width: 100%;
+}
+main h2{
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #364f6b;
 }
 .descripcion-pcipal{
     width: auto;
@@ -58,44 +66,43 @@ main{
     border-top: 2,5rem;
     text-align: center;
     font-size: 1rem;
+    color: #364f6b
 }
 .grid-tratamientos{
-    width: 95%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 20px
-    padding: 5rem;
-    box-shadow: 0 0 0.5rem rgb(173, 188, 215);
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding: 0%;
     position: relative;
     top: 2.5rem;
 }
-.articulos {
+.grid-tratamientos .articulos {
     border: 10px;
     padding: 20px;
-    font-size: 0,1 vw;
+    font-size: 0.75rem;
     display: flex;
     text-align: center;
     position: relative;
-    width:fit-content
+    width:fit-content;
     line-height: 1.4vw;
-    background: border-box
- 
-}
+    color: #364f6b
+ }
 .articulos h3 {
-    font-size: 1rem;
+    font-size: 3vh;
     justify-content: center;
 }
 .articulos p {
     font-size: 0.75rem;
-    justify-content: center
+    justify-content: center;
 }
 .img-trat{
      display: block;
      background-size: contain;
      padding:0.15rem;
 }
-
 .footer{
     width: 100%;
     display: flex;
@@ -105,31 +112,145 @@ main{
     font-weight: 100;
     box-shadow: 0 0 0.5rem rgb(173, 188, 215);
     padding: 2rem;
-    justify-content:space-around
- }
+    justify-content:space-around;
+}
 .footer-right ul li {
-  display: inline-block;  
-  list-style: none
+  display: inline;  
+  list-style: none;
   padding: 10%;   
-  }
+}
 .footer-left {
-    display: flex;  
-    list-style: none
-    padding: 10%;   
-    }
+    display: block;  
+    list-style: none;
+    padding: 2.5% 8%;   
+}
 .icono {
    background-size: contain;
-   width: 30%;
+   width: 10%;
 }
-
 @media (max-width: 600px) {
-    .footer .footer-left, .footer .footer-right {
-      text-align: center;
+    .grid-tratamientos{
+        width: 100%;
+        padding: 5rem;
+        display: inline;
+        box-sizing: content-box;
+        position: relative;
+        top: 2.5rem;
     }
-    .footer .footer-right {
-      float: none;
-      margin: 0 auto 20px;
+    .articulos {
+        border: 1vh;
+        padding: 0.1vh;
+        font-size: 0,5vw;
+        text-align: center;
+        position: relative;
+        width:fit-content;
+        line-height: 1.5rem;
+        background: border-box;
+        box-shadow: 0 0 0.5rem rgb(173, 188, 215);
+     }	
+     .img-trat{
+        display: block;
+        background-size:contain;
+        width: 5%;
     }
-    .footer .footer-right p {
-      line-height: 1.8;
+     .articulos h3 {
+       font-size: 3vh;
+       justify-content: center;
+     }
+    .articulos p {
+      font-size: 0,5vh;
+      justify-content: center;
+    }
+    .footer{
+        width: 100%;
+        background-color: rgb(165, 165, 182);
+        height: 50vh;
+        text-align: center;
+        font-weight: 100;
+        box-shadow: 0 0 0.5rem rgb(173, 188, 215);
+        padding: 2rem;
+    }
+      .footer-left {
+       box-sizing: content-box;  
+    }
+    .footer-right ul li {
+      display: inline;  
+      list-style: none;
+      padding: 10%;   
+    }
+  
+    .icono {
+       background-size: contain;
+       width: 10%;
+    }
+}
+.preguntas-container {    
+    max-width: 800px;
+    margin: 50px auto 0 auto;
+    padding: 2rem;
+  }
+.preguntas-container h2 {
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #364f6b;
+  }
+  details { 
+    background-color: #f6f8fa;
+    width: 100%;
+    margin-bottom: 1rem;   
+    border-radius: 8px;  
+    border: 1px solid #d8e0e9;
+    color: #364f6b;
+    position: relative;  
+  }
+  details summary {  
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  details p {
+    padding: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    background: #f6f8fa;
+    border-left: 2px solid #364f6b;
+  }
+  
+  details:hover,
+  details[open] {
+    box-shadow: 5px 5px 15px #d9d9d9;
+  }
+  
+  details[open] {
+    background: #ffffff;
+  }
+  
+  details[open] summary {
+    font-weight: 600;
+  }
+  
+  details summary::before {
+    position: absolute;
+      content: "➤";    
+      font-size: 1.75rem;
+      top: 10px;
+      right: 16px;  
+  }
+  
+  details[open] summary::before {
+    -webkit-animation: rotate 0.6s ease-in-out both;
+            animation: rotate-emoji 0.6s ease-in-out both;
+  }
+  
+  @-webkit-keyframes rotate-emoji {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
     }
