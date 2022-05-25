@@ -6,27 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
     <title>XM Medicina Estética</title>
     <link rel="stylesheet" href="CSS/styles.css">
-      
+    <script src="JS/nav.js"></script>
 </head>
+
 <body>
 
-    <header>
-      <div class = "header-container">
+  <header>
+    <div class = "nav-bar">
+      <div class="nav-inside"></div>
+    </div>
+    <div class="logo">
        <a href="index.html"> <img src="IMG/logo.ico" with="2rem" alt="Logo XM"></a>
-       <nav class="header-menubar">
+    </div>  
+       <nav class="header-menubar" style="display: block;">
           <ul>
-             <li><a href="index.html"></a>Inicio</li>
+             <li class="active"><a href="index.html"></a>Inicio</li>
              <li><a href="#Nosotros"></a>Quienes Somos</li>
              <li><a href="#Tratamientos"></a>Tratamientos</li>
              <li><a href="#Preguntas"></a>Preguntas Frecuentes</li>
-             <li><a href="Contacto.html"></a>Contacto</li>
-             <li><a href="#Promociones"></a>Promociones</li>
-           </ul>
+             <li class="last"><a href="Contacto.html"></a>Contacto</li>
+          </ul>
        </nav>
-      </div>
-    </header>
-
-    <main>
+       <button class="nav-trigger">Navegación</button>
+    </div>
+</header>
+   
+        <main>
       
     <a name="Nosotros"/>
       <section class="descripcion-pcipal"> <!-- primer contenedor-->
