@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-ARG">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,23 +13,21 @@
 <body>
 
   <header>
-    <div class = "nav-bar">
-      <div class="nav-inside"></div>
-    </div>
-    <div class="logo">
-       <a href="index.html"> <img src="IMG/logo.ico" with="2rem" alt="Logo XM"></a>
-    </div>  
-       <nav class="header-menubar" style="display: block;">
-          <ul>
-             <li class="active"><a href="index.html"></a>Inicio</li>
-             <li><a href="#Nosotros"></a>Quienes Somos</li>
-             <li><a href="#Tratamientos"></a>Tratamientos</li>
-             <li><a href="#Preguntas"></a>Preguntas Frecuentes</li>
-             <li class="last"><a href="Contacto.html"></a>Contacto</li>
-          </ul>
-       </nav>
-       <button class="nav-trigger">Navegación</button>
-    </div>
+    <nav class="cajaNav"> 
+      <div class="titNav">
+          <div class="logo">
+              <a href="index.html"> <img src="IMG/logo.ico" with="2rem" alt="Logo XM"></a>
+           </div>
+         <div class="toggle" onclick="alternar('menu')">&#9776</div>
+      </div>
+      <ul class="barNav cerrado" id="menu"> 
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#Nosotros">Quienes Somos</a></li>
+          <li><a href="#Tratamientos">Tratamientos</a></li>
+          <li><a href="#Preguntas">Preguntas Frecuentes</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
 </header>
    
         <main>
