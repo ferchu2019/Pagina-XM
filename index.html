@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>XM Medicina Estética</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="JS/nav.js"></script>
@@ -18,14 +18,14 @@
           <div class="logo">
               <a href="index.html"> <img src="IMG/logo.ico" with="2rem" alt="Logo XM"></a>
            </div>
-         <div class="toggle" onclick="alternar('menu')">&#9776</div>
+         <div class="toggle" onclick="alternar('menu')">&#9776;</div>
       </div>
       <ul class="barNav cerrado" id="menu"> 
           <li><a href="index.html">Inicio</a></li>
           <li><a href="#Nosotros">Quienes Somos</a></li>
           <li><a href="#Tratamientos">Tratamientos</a></li>
           <li><a href="#Preguntas">Preguntas Frecuentes</a></li>
-          <li><a href="Contacto.html">Contacto</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
       </ul>
     </nav>
 </header>
@@ -161,6 +161,38 @@
           <p>Depende del tipo elegido. Algunos una sesión de 20/30 min y otros de acuerdo al plan que indique el profesional según las necesidades de cada paciente.</p>
      </details>   
   </div>
+  <a name="Contacto"/>
+  <div class="Contacto">
+    <form action="" class="formulario" method="get">
+      <h1 class="formulario__titulo">Contáctenos</h1>
+      <ul class="menu-contacto">
+       <li>
+        <label for="name"> Nombre y Apellido: </label> 
+        <input type="text" id="name" name="user_name">
+       </li>
+       <li>
+        <label for="mail">Correo Electronico:</label>
+        <input type="text" id="email" name="user_mail">
+       </li>
+       <li>
+        <label for="tel">Teléfono:</label>
+        <input type="number" id="nro_tel" name="user_tel">
+       </li>
+        <li>
+        <label for="msg">Mensaje</label>
+        <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li>
+        <button> Enviar </button>  
+        </li>
+      </ul> 
+    </form>
+  </div>
+
+
+
+
+
 
 </main>  
         

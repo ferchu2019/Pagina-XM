@@ -13,65 +13,74 @@ body{
  @charset "utf-8";
  /* CSS Document */
  :root{
-  --color:#f6f8fa;
-     --fnd : rgb(165, 165, 182);
-     --fndRsp: white;
-     --colorRsp: rgb(77, 77, 82);
+  --color:#dce2e8;
+     --fnd : rgb(127, 127, 138);
+     --fndRsp: rgb(206, 156, 156);
+     --colorRsp: rgb(165, 165, 182);
       }
+
  .cajaNav{
      font-family: sans-serif;
      display:flex;
      justify-content: space-between;
-     background:var(--fnd);
+     background:rgb(165, 165, 182);
      color: var(--color);
      width: 100%;
      position: fixed;
-     top=0;
+     top:0;
      left: 0%;
      z-index: 1;
      t;
      }
+
  .cajaNav .barNav{
      margin:0 10px 0 0;
      }
+
  .cajaNav .titNav{
      display:flex;
      justify-content:space-between;
      align-items:center;
      flex: 1;
-     background:var(--fnd);
+     background:rgb(165, 165, 182);
      color:var(--color);
      height:auto;
      } 
+
  .cajaNav .titNav .toggle{
      display:none;
      }
+
  .cajaNav .titNav .logo{
      margin: 10px 10px;
       }
+
   .cajaNav .barNav {
      display:flex;
      list-style:none;
      align-items: center;
      padding:0;
      }
+
  .cajaNav .barNav li{
      display:flex;
      align-items:center;
      padding: 0 20px ;
-     height:100%;
-     
+     height:100%; 
  }
+
  .cajaNav .barNav li:hover{
      background: var(--color);
      color:var(--fnd);
      cursor: pointer;
      }
+
  .cajaNav .barNav li a{
      text-decoration: none;
      cursor: pointer;
      color:inherit;
  }
+
  @media (max-width: 576px){
      .cajaNav{
          flex-direction: column;
@@ -79,9 +88,11 @@ body{
          background: unset;
          }
      .cajaNav .barNav{
-         color:ghostwhite;
+         color:rgb(243, 243, 245);
          box-shadow: 0 0 0.5rem rgb(173, 188, 215);
+         background-color: rgb(165, 165, 182);
          flex-direction:column;
+         z-index: 2000;
            } 
      .cajaNav .barNav li {
          padding: 10px 20px;
@@ -116,11 +127,11 @@ body{
 .grid-tratamientos{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     row-gap: 2rem;
     column-gap: 2rem;
-    padding: 0%;
+    padding: 5%%;
     position: relative;
     top: 2.5rem;
 }
@@ -148,6 +159,28 @@ body{
      background-size: contain;
      padding:0.15rem;
 }
+
+.formulario {
+  width: 500px;
+  max-width: 800%;
+  margin:5% auto 5% auto;
+  padding: 3rem;
+  box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+  position: relative;
+ }
+
+.formulario__titulo {
+  text-align: center;
+  margin-top: 0;
+  color: rgba(0,0,0,0.7);
+}
+
+.menu-contacto ul {
+    text-decoration: none;
+    cursor: pointer;
+    color:inherit;
+}
+
 .footer{
     width: 100%;
     display: flex;
@@ -192,7 +225,7 @@ body{
         box-shadow: 0 0 0.5rem rgb(173, 188, 215);
      }	
      .img-trat{
-        display: inline;
+        display: none;
         background-size:cover;
         width: 5%;
     }

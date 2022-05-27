@@ -1,4 +1,3 @@
-<script>
 function alternar(menu)
 {
     var oMenu = document.getElementById(menu);
@@ -16,4 +15,3 @@ else{
     event.target.innerText = 'Cerrar'
     }
 }
-</script>
