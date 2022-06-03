@@ -121,6 +121,9 @@ body{
     font-size: 1rem;
     color: #364f6b
    }
+h2 {
+   text-align: center;
+}
 .grid-tratamientos {
     width: 100%;
     display: grid;
@@ -170,9 +173,10 @@ body{
   margin-top: 0;
   color: rgba(0,0,0,0.7);
 }
-
+.menu-contacto {
+  list-style: none;
+}
 .menu-contacto ul {
-    text-decoration: none;
     cursor: pointer;
     color:inherit;
 }
@@ -195,8 +199,8 @@ body{
 }
 .footer-left {
     display: block;  
-    list-style: none;
-    padding: 2.5% 8%;   
+    padding: 2.5% 8%;  
+    font-size: 0.8rem; 
 }
 .icono {
    background-size: contain;
@@ -250,14 +254,17 @@ body{
         font-weight: 100;
         box-shadow: 0 0 0.5rem rgb(173, 188, 215);
         padding: 2rem;
+        display:block
     }
       .footer-left {
-       box-sizing: content-box;  
+       box-sizing: content-box;
+       padding-bottom: 1rem;  
     }
     .footer-right ul li {
       display: inline;  
       list-style: none;
-      padding: 10%;   
+      padding: 10%; 
+      font-size: 2vh;  
     }
   
     .icono {
