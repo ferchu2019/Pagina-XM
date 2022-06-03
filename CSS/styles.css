@@ -10,9 +10,7 @@ body{
         background-color: ghostwhite;
  }
 
- @charset "utf-8";
- /* CSS Document */
- :root{
+  :root{
   --color:#dce2e8;
      --fnd : rgb(127, 127, 138);
      --fndRsp: rgb(206, 156, 156);
@@ -30,7 +28,6 @@ body{
      top:0;
      left: 0%;
      z-index: 1;
-     t;
      }
 
  .cajaNav .barNav{
@@ -124,17 +121,16 @@ body{
     font-size: 1rem;
     color: #364f6b
    }
-.grid-tratamientos{
+.grid-tratamientos {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 2rem;
     column-gap: 2rem;
-    padding: 5%%;
-    position: relative;
-    top: 2.5rem;
-}
+    padding: 5%;
+    position:relative;
+  }
 .grid-tratamientos .articulos {
     border: 10px;
     padding: 20px;
@@ -205,15 +201,16 @@ body{
 .icono {
    background-size: contain;
    width: 10%;
-}
+} 
+
 @media (max-width: 600px) {
     .grid-tratamientos{
         width: 100%;
         padding: 5rem;
         display: inline;
         box-sizing:content-box
-        top: 2.5rem; 
-        position: relative;
+        top:2.5rem; 
+        position:relative;
     }
     .articulos {
         border: 1vh;
@@ -237,8 +234,16 @@ body{
       font-size: 0,5vh;
       justify-content: center;
     }
+    .formulario {
+      width: 70%;
+      max-width: 800%;
+      margin:5% auto 5% auto;
+      padding: 3rem;
+      box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+      position: relative;
+     }
     .footer{
-        width: 100%;
+        width: 80%;
         background-color: rgb(165, 165, 182);
         height: 50vh;
         text-align: center;
@@ -330,3 +335,4 @@ body{
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
     }
+  }
