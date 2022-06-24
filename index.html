@@ -162,13 +162,12 @@
      </details>   
   </div>
   <a name="Contacto"/>
-  <div class="Contacto">
-    <form action="" class="formulario" method="get" name="formu01">
-      <h1 class="formulario__titulo">Contactanos</h1> <br>
+  <form id="Contacto" method="get" action="index.html#Contacto" class="Contacto formulario" name="formu01">
+     <h1 class="formulario__titulo">Contactanos</h1> <br>
       <ul class="menu-contacto">
        <li>
         <label for="name"> Nombre y Apellido: </label> 
-        <input type="text" id="name" name="nya" placeholder="pepe argento">
+        <input type="text" id="name" name="nya" placeholder="Juana Perez">
        </li> <br>
        <li>
         <label for="mail">Correo Electronico:</label>
@@ -183,10 +182,11 @@
         <textarea id="msg" name="mnsj"></textarea>
         </li> <br>
         <li>
-        <button type="input"> Enviar </button>  
+          <button type="input" onclick="validation()"> Enviar </button> 
         </li>
       </ul> 
     </form>
+    
   </div>
 
 
