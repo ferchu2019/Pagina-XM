@@ -42,15 +42,15 @@ body{
      background:rgb(165, 165, 182);
      color:var(--color);
      height:auto;
-     } 
+     }
 
  .cajaNav .titNav .toggle{
      display:none;
      }
 
- .cajaNav .titNav .logo{
-     margin: 10px 10px;
-      }
+ .logo{
+     margin: 5px 5px;
+    }
 
   .cajaNav .barNav {
      display:flex;
@@ -63,7 +63,7 @@ body{
      display:flex;
      align-items:center;
      padding: 0 20px ;
-     height:100%; 
+     height:100%;
  }
 
  .cajaNav .barNav li:hover{
@@ -90,14 +90,14 @@ body{
          background-color: rgb(165, 165, 182);
          flex-direction:column;
          z-index: 2000;
-           } 
+           }
      .cajaNav .barNav li {
          padding: 10px 20px;
          }
      .cajaNav .barNav li:hover{
          background: var(--fnd);
          color: var(--color);
-         } 
+         }
      .cajaNav .titNav{
          width: 100%;
          align-items:center;
@@ -107,11 +107,11 @@ body{
          margin-right:10px;
          cursor:pointer
          }
-     
+
      .abierto{display:flex !important}
      .cerrado{display:none !important}
      }
-     
+
 .descripcion-pcipal{
     width: auto;
     padding: 5rem;
@@ -125,16 +125,17 @@ h2 {
    text-align: center;
 }
 .grid-tratamientos {
-    width: 100%;
+    width: 95vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 2rem;
+    row-gap: 5rem;
     column-gap: 2rem;
-    padding: 5%;
+    padding: 1%;
     position:relative;
   }
-.grid-tratamientos .articulos {
+
+.articulos {
     border: 10px;
     padding: 20px;
     font-size: 0.9rem;
@@ -147,6 +148,7 @@ h2 {
  }
 .articulos h3 {
     font-size: 3vh;
+    line-height: 3vh;
     justify-content: center;
 }
 .articulos p {
@@ -168,7 +170,7 @@ h2 {
   position: relative;
  }
 
- 
+
 
 .formulario__titulo {
   text-align: center;
@@ -184,30 +186,30 @@ h2 {
 }
 
 .footer{
-    width: 100%;
+    width: 98%;
     display: flex;
     background-color: rgb(165, 165, 182);
     height: 50vh;
     text-align: center;
     font-weight: 100;
     box-shadow: 0 0 0.5rem rgb(173, 188, 215);
-    padding: 2rem;
+    padding: 1%;
     justify-content:space-around;
 }
 .footer-right ul li {
-  display: inline;  
+  display: inline;
   list-style: none;
-  padding: 10%;   
+  padding: 10%;
 }
 .footer-left {
-    display: block;  
-    padding: 2.5% 8%;  
-    font-size: 0.8rem; 
+    display: block;
+    padding: 2.5% 8%;
+    font-size: 0.8rem;
 }
 .icono {
    background-size: contain;
    width: 10%;
-} 
+}
 
 @media (max-width: 600px) {
     .grid-tratamientos{
@@ -215,7 +217,7 @@ h2 {
         padding: 5rem;
         display: inline;
         box-sizing:content-box
-        top:2.5rem; 
+        top:2.5rem;
         position:relative;
     }
     .articulos {
@@ -226,7 +228,7 @@ h2 {
         width:fit-content;
         background: border-box;
         box-shadow: 0 0 0.5rem rgb(173, 188, 215);
-     }	
+     }
      .img-trat{
         display: none;
         background-size:cover;
@@ -263,21 +265,21 @@ h2 {
     }
       .footer-left {
        box-sizing: content-box;
-       padding-bottom: 1rem;  
+       padding-bottom: 1rem;
     }
     .footer-right ul li {
-      display: inline;  
+      display: inline;
       list-style: none;
-      padding: 10%; 
-      font-size: 2vh;  
+      padding: 10%;
+      font-size: 2vh;
     }
-  
+
     .icono {
        background-size: contain;
        width: 10%;
     }
 }
-.preguntas-container {    
+.preguntas-container {
     max-width: 800px;
     margin: 50px auto 0 auto;
     padding: 2rem;
@@ -289,16 +291,16 @@ h2 {
     text-align: center;
     color: #364f6b;
   }
-  details { 
+  details {
     background-color: #f6f8fa;
     width: 100%;
-    margin-bottom: 1rem;   
-    border-radius: 8px;  
+    margin-bottom: 1rem;
+    border-radius: 8px;
     border: 1px solid #d8e0e9;
     color: #364f6b;
-    position: relative;  
+    position: relative;
   }
-  details summary {  
+  details summary {
     font-weight: 400;
     font-size: 1rem;
     padding: 1rem;
@@ -311,33 +313,33 @@ h2 {
     background: #f6f8fa;
     border-left: 2px solid #364f6b;
   }
-  
+
   details:hover,
   details[open] {
     box-shadow: 5px 5px 15px #d9d9d9;
   }
-  
+
   details[open] {
     background: #ffffff;
   }
-  
+
   details[open] summary {
     font-weight: 600;
   }
-  
+
   details summary::before {
     position: absolute;
-      content: "➤";    
+      content: "➤";
       font-size: 1.75rem;
       top: 10px;
-      right: 16px;  
+      right: 16px;
   }
-  
+
   details[open] summary::before {
     -webkit-animation: rotate 0.6s ease-in-out both;
             animation: rotate-emoji 0.6s ease-in-out both;
   }
-  
+
   @-webkit-keyframes rotate-emoji {
     0% {
       -webkit-transform: rotate(0);
